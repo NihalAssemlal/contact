@@ -15,7 +15,7 @@ function App() {
     <div>
       <Nav />
       <ContactContextProvider>
-      <Routes>
+      <Routes basename='/contactApplication'>
         <Route path='/' element={<Home/>}  />
         <Route path='/ajout' element={<Ajout/>}  />
       </Routes>
