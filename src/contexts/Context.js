@@ -55,10 +55,6 @@ const ContactContextProvider = (props) => {
 
 
   const deleteContacte = (id) => {
-    // const index = contacts.map(function (e) {
-    //   return e.ids;
-    // }).indexOf(ids);
-    // contacts.splice(index, 1);
     setContacts(contacts.filter(contact => contact.id !== id));
     history('/');
   }
